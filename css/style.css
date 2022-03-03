@@ -1,0 +1,304 @@
+
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+header {
+ background-color: #d6ce93;
+  padding: 20px 0 20px;;
+  display: none;
+}
+nav {
+    
+    display: none;
+}
+
+li {
+    text-align: center;
+}
+
+fieldset {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+h1 {
+    font-style: initial;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 2.5em;
+}
+
+p{
+    text-align: justify;
+    padding: 0 0 20px;
+    margin:10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3a380;
+    height: 60px;
+
+}
+
+
+a{
+    color: black;
+}
+
+
+div.gallery {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+     }
+
+
+  img.small {
+    width:200px;
+    height: 200px;
+    transition: 1s; 
+    padding: 15px;
+    border-radius: 30px;
+     
+  }
+  
+ img.small:hover{
+     filter:grayscale(70%);
+     transform:scale(1.1);
+ }
+
+h1.gallery {
+    color: whitesmoke;
+}
+
+label {
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.white {
+    color: white;
+}
+
+
+.navigation
+ {
+    list-style-type: none;
+}
+
+
+
+.logo {
+    height: 80px;
+    width: 80px;
+    align-self: flex-start;
+}
+
+
+
+.button {
+    text-align: center;
+}
+
+/* .erb {
+    height: fit-content;
+    width: fit-content;
+} */
+
+
+
+.menu-item {
+    cursor:pointer;
+    /* margin: 10px 20px 20px 20px; */
+     text-decoration-line: underline;
+    font-family:cursive;
+    color: black;
+  
+}
+
+.uvodka {
+display: block;
+margin: 0 auto;
+width: 320px;
+height: 200px;
+}
+
+.space {
+    display: none;
+}
+
+
+
+.tabletplus {
+    display: none;
+}
+
+.background-color1 {
+background-color: #ddec09;
+}
+
+
+.erb_tab {
+    display: none;
+}
+
+
+@media (min-width:768px){
+   
+
+    header{
+        display: inherit;
+        background-color: #d6ce93;
+         padding: 20px 0 20px;;
+       }
+    
+    nav {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ fieldset.tabletplus {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+fieldset.info {
+    justify-items: center;
+}
+
+
+.nomob{
+    margin-right: 20px;
+}
+
+
+.tabletplus {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+
+ .erb_tab {
+     display: initial;
+ }
+
+ .erb_mob {
+     display: none;
+ }
+ .uvodka {
+    width: 764px;
+    height: 500px;
+}
+
+.menu-item {
+    padding: 10px 20px 20px 20px;
+}
+
+}
+
+@media (min-width:957px) {
+    .space {
+        display: initial;
+        width:180px;
+    }
+}
+
+
+@media (min-width:1024px) {
+nav{
+    justify-content: flex-start;
+}
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+       justify-content: flex-start;
+    }
+
+    .erb_tab {
+        display: none;
+    }
+
+    .erb_mob {
+        display: initial;
+    }
+}
+
+@media (min-width:1024px) {
+    .uvodka {
+        width: initial;
+        height: initial;
+    }
+
+    li {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1135px) {
+    .space {
+        display: none;
+        
+    }
+}
+
+
+@media (min-width:1440px) {
+      li {
+        font-size: 30px;
+    }
+  
+    h1{
+        font-size: 3em;
+        padding: 20px;
+    }
+}   
+     
+
+@media (min-width:2560px) {
+    li {
+      font-size: 40px;
+  }
+}
+
+@media (min-width:1803px) {
+    .space {
+        display: initial;
+        width: 200px;
+        
+    }
+}
+
+
+
+
+@media (min-width:2403px) {
+
+    label, input, fieldset, textarea {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
+}

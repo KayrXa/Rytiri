@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihláška</title>
+    <link rel="stylesheet" href="../Rytiri/css/style.css">
+</head>
+
+<body>
+
+
+    <div>
+        <a href="index.html">
+            <img class="uvodka" src="../Rytiri/images/Uvodka.bmp" alt="logo"></a>
+    </div>
+
+    <header>
+
+        <nav>
+            <a href="index.html"><img class="erb_tab" src="../Rytiri/images/Znak.jpg" alt=erb></a>
+            <!-- display tablet 768 -->
+            <ul class="navigation">
+                <li class="menu-item"><a href="index.html"><img class="erb_mob" src="../Rytiri/images/Znak.jpg"
+                            alt=erb></a></li>
+                <!-- display mobile -->
+                <li class="menu-item"><a href="index.html">Úvod</a></li>
+                <li class="menu-item"><a href="index3.html">Galerie</a></li>
+                <li class="menu-item"><a href="index2.html"">Kariéra</a></li>
+                <li class=" menu-item"><a href="">Služby a ceník</a></li>
+                <li class=" menu-item"><a href="">Užitečné odkazy</a></li>
+
+
+                <!-- margin a padding vylulovat,prvně navgace flex box poté teprve ul flex box -->
+
+                <!-- odkazovat na konkrétní část ve na webu    -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="background-color2">
+        <h1 class="white">Přihláška</h1>
+        <p class="white"> Pokud máš zájem vstoupit mezi bandu neandrtálců, zvrhlíků, šílených zvířat, psychicky
+            nevyrovnaných prasat, vyplň prosím následující přihlášku, ať zjistíme, že jsi dostatečně vhodný kandidát</p>
+
+
+        <form action="result.html" method="get">
+
+            <fieldset class="mobile">
+                <!-- <div class="nomob"> -->
+                <label for="name">Jméno</label>
+                <input type="text" id="name" name="Name" placeholder="Sem napiště svoje jméno" autofocus required>
+                <!-- </div> -->
+                <!-- <div class="nomob"> -->
+                <label for="surname">Příjmení</label>
+                <input type="text" id="surname" name="Surname" placeholder="Sem napiště svoje příjmení" required>
+                <!-- </div> -->
+                <!-- <div class="nomob"> -->
+                <label for="age">Věk</label>
+                <input type="number" min="15" max="120" id="age" name="Age" required>
+                <!-- </div> -->
+
+                <!-- <div class="nomob"> -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Sem napiš svůj email" required>
+                <!-- </div> -->
+
+                <!-- <div class="nomob"> -->
+                <label for="tel">Mobil</label>
+                <input type="tel" id="tel" name="tel" placeholder="Sem napiště telefoní číslo" required>
+                <!-- </div> -->
+                <!-- <div class="nomob"> -->
+                <label for="o-mne">Informace o mě</label>
+                <textarea id="textbox" name="About me" id="o-mne"
+                    placeholder="Zde nám napiš proč se k nám chceš přidat."></textarea>
+                <!-- </div> -->
+
+            </fieldset>
+
+            <fieldset class="tabletplus">
+                <div class="nomob">
+                    <label for="name">Jméno</label>
+                    <input type="text" id="name" name="Name" placeholder="Sem napiště svoje jméno" autofocus required>
+                </div>
+                <div class="nomob">
+                    <label for="surname">Příjmení</label>
+                    <input type="text" id="surname" name="Surname" placeholder="Sem napiště svoje příjmení" required>
+                </div>
+                <div class="nomob">
+                    <label for="age">Věk</label>
+                    <input type="number" min="15" max="120" id="age" name="Age" required>
+                </div>
+
+                <div class="nomob">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Sem napiš svůj email" required>
+                </div>
+
+                <div class="nomob">
+                    <label for="tel">Mobil</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Sem napiště telefoní číslo" required>
+                </div>
+                <div class="space"></div>
+                <fieldset class="info">
+                    <legend>Informace o mě</legend>
+
+                    <div class="nomob">
+                        <textarea id="textbox" name="About me" id="o-mne" rows="10" cols="80"
+                            placeholder="Zde nám napiš proč se k nám chceš přidat."></textarea>
+                    </div>
+                </fieldset>
+    </div>
+    <div class="nomob">
+        <input type="checkbox" id="voluntary" name="voluntary" checked required>
+        <label for="voluntary">Souhlasíš s tím, že po odeslání přihlášky připadným přijetím budeš týrán a
+            zneužíván všemi
+            členy Dies Mortis všemožnými způsoby?</label>
+    </div>
+    <div class="button">
+        <button type="submit">Odeslat</button>
+    </div>
+    </fieldset>
+
+
+
+
+
+
+</body>
+
+
+
+<footer>
+    <div class="foot">coyright</div>
+    <div class="foot"> odkaz na tlačítka</div>
+    <div class="foot">kontakt</div>
+    <div class="foot"></div>
+
+</footer>
+
+
+</body>
+
+</html>

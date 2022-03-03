@@ -1,0 +1,16 @@
+Podminky:
+
+1) Responzivni stranky - Mobile 1st 
+
+
+Typy:
+Formulare, vyplneni ... 
+
+Projekt verzovaný a uložený na git hubu
+- odkaz na git hub
+
+
+názvy tříd v AJ, sémantické značky ( ne všechno DIV - header/footer ... )
+
+SEO (jak dobře se na dotaz vyhledá můj web) - alt atributy u obrázků (float pouze obtékání obrázků textem)
+dostatečné verze commitů 
