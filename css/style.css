@@ -14,7 +14,7 @@ nav {
     display: none;
 }
 
-li {
+.menu-item {
     text-align: center;
 }
 
@@ -39,12 +39,15 @@ p{
     padding: 0 0 20px;
     margin:10px;
 }
+
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #a3a380;
-    height: 60px;
+    height: 70px;
 
 }
 
@@ -60,6 +63,43 @@ div.gallery {
     text-align: center;
      }
 
+p.sluzby {
+    text-align: center;
+    color: whitesmoke;
+}
+p.sluzbyb {
+    text-align: center;
+
+}
+
+
+ul.events
+
+{
+
+}
+
+
+.potvrzeno
+{
+    color: whitesmoke;
+    font-weight:bold;
+    list-style-type: none;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 35%;
+}
+
+.nepotvrzeno
+{
+   color: whitesmoke;
+   font-style: oblique;
+   list-style-type: none;
+   font-size: 30px;
+   margin-top: 10px;
+   margin-left: 35%;
+}
+
 
   img.small {
     width:200px;
@@ -74,6 +114,13 @@ div.gallery {
      filter:grayscale(70%);
      transform:scale(1.1);
  }
+
+ img.FB {
+    width: 40px;
+    height:40px;
+    background-color: transparent;
+    margin-top: 10px;
+}
 
 h1.gallery {
     color: whitesmoke;
@@ -123,6 +170,11 @@ label {
     color: black;
   
 }
+.menu-itemselected {
+    color: #a3a380;
+}
+
+
 
 .uvodka {
 display: block;
@@ -208,6 +260,11 @@ fieldset.info {
     padding: 10px 20px 20px 20px;
 }
 
+.menu-itemselected 
+{
+    padding: 10px 20px 20px 20px;
+}
+
 }
 
 @media (min-width:957px) {
@@ -223,13 +280,16 @@ nav{
     justify-content: flex-start;
 }
 
-    ul {
+    .navigation {
         display: flex;
         align-items: center;
     }
 
-    li {
+    .menu-item {
        justify-content: flex-start;
+    }
+    .menu-itemselected {
+        justify-content: flex-start;
     }
 
     .erb_tab {
@@ -247,7 +307,10 @@ nav{
         height: initial;
     }
 
-    li {
+    .menu-item {
+        font-size: 20px;
+    }
+    .menu-itemselected {
         font-size: 20px;
     }
 }
@@ -261,10 +324,12 @@ nav{
 
 
 @media (min-width:1440px) {
-      li {
+    .menu-item {
         font-size: 30px;
     }
-  
+  .menu-itemselected {
+    font-size: 30px;
+}
     h1{
         font-size: 3em;
         padding: 20px;
@@ -273,9 +338,13 @@ nav{
      
 
 @media (min-width:2560px) {
-    li {
+    .menu-item {
       font-size: 40px;
   }
+
+  .menu-itemselected {
+    font-size: 40px;
+}
 }
 
 @media (min-width:1803px) {

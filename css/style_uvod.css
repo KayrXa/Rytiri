@@ -45,8 +45,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #a3a380;
-    height: 60px;
+    height: 70px;
 
 }
 
@@ -75,6 +76,14 @@ div.gallery {
      filter:grayscale(70%);
      transform:scale(1.1);
  }
+
+img.FB {
+    width: 40px;
+    height:40px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
 
 h1.gallery {
     color: whitesmoke;
@@ -122,6 +131,11 @@ h1.gallery {
     font-family:cursive;
     color: black;
   
+}
+
+.menu-itemselected
+{
+    color: #a3a380;
 }
 
 .uvodka {
@@ -208,6 +222,10 @@ background-color: #ddec09;
     padding: 10px 20px 20px 20px;
 }
 
+.menu-itemselected {
+    padding: 10px 20px 20px 20px;
+}
+
 }
 
 @media (min-width:1024px) {
@@ -215,14 +233,19 @@ nav{
     justify-content: flex-start;
 }
 
-    ul {
+    .navigation {
         display: flex;
         align-items: center;
     }
 
-    li {
+    .menu-item {
        justify-content: flex-start;
     }
+
+
+    .menu-itemselected {
+        justify-content: flex-start;
+     }
 
     .erb_tab {
         display: none;
@@ -239,20 +262,33 @@ nav{
         height: initial;
     }
 
-    li {
+    .menu-item {
         font-size: 20px;
     }
+
+    .menu-itemselected {
+        font-size: 20px;
+    }
+
 }
 
 
 @media (min-width:1440px) {
-      li {
+      .menu-item {
+        font-size: 30px;
+    }
+
+    .menu-itemselected {
         font-size: 30px;
     }
 }
 
 @media (min-width:2560px) {
-    li {
+    .menu-item {
       font-size: 40px;
   }
+  .menu-itemselected {
+    font-size: 40px;
+}
+
 }
